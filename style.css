@@ -48,6 +48,7 @@ nav ul li a {
 
 nav ul li a:hover {
     color: #60a5fa;
+    transform: translateY(-2px);
 }
 
 /* Home */
@@ -184,6 +185,8 @@ section h2 {
     color: white;
     text-decoration: none;
     border-radius: 6px;
+    transition: transform 0.3s ease, 
+    background 0.3s ease;
 }
 .home-buttons a:hover {
     transform: translateY(-3px);
@@ -231,6 +234,12 @@ section h2 {
 #skills h2 {
     font-size: 36px;
     margin-bottom: 30px;
+}
+.skills-intro {
+    max-width: 700px;
+    margin: -10px auto 30px;
+    font-size: 17px;
+    line-height: 1.6;
 }
 
 .skills-container {
@@ -365,6 +374,10 @@ section h2 {
 .project-card p {
     margin-bottom: 12px;
     line-height: 1.6;
+}
+.project-card ul {
+    margin: 10px 0 15px 20px;
+    line-height: 1.8;
 }
 
 .project-card a {
@@ -529,7 +542,9 @@ footer p {
     }
 
     nav ul {
-        gap: 10px;
+    gap: 12px;
+    flex-wrap: wrap;
+    justify-content: center;
     }
 
     nav ul li a {
